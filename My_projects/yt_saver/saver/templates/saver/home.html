@@ -1,0 +1,19 @@
+{% load static %}
+<html>
+<form action="/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Поиск">
+</form>
+<a>res: {{ res }}</a>
+<a>{{v_path}}</a>
+<p><a href="{% static v_name %}" download>Скачать файл</a>
+</p>
+<p>
+    <img src="{{ pic }}" sizes="500">
+</p>
+</html>
+
+
+
+
