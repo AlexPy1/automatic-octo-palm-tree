@@ -24,5 +24,5 @@ urlpatterns = [
     path('api/v1/userlist/', UserAPIView.as_view()),
     path('api/v1/user/', UserAPIView.as_view()),
     path('api/v1/user/<str:phone_number>/', UserAPIView.as_view()),
-    path('/api/v1/user_friend/', GetUserFriendsAPIView.as_view())
+    path('api/v1/user_friend/', GetUserFriendsAPIView.as_view())
     ]
