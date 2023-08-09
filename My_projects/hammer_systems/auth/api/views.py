@@ -31,7 +31,7 @@ class UserAPIView(generics.ListAPIView):
                 serializer.is_valid(raise_exception=True)
                 serializer.save()
             except:
-                return Response ({"Error": 'Unknown invite code'})
+                return Response({"Error": 'Unknown invite code'})
             return Response({"Update_profile": serializer.data})
         else:
             return Response({"Error": 'Invite code is used'})
